@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HTMLComposeText</string>
+    <string name="html_string"><![CDATA[
+    Hello <b>World</b>.
+    This <i><strike>text</strike>sentence</i> is form<b>att<u>ed</u></b> in simple html. <a href=\"https://github.com/CHRehan/HTMLComposeText\">HtmlText</a>]]></string>
+    <string name="title">HTML PlayGround In Compose</string>
+
+</resources>
