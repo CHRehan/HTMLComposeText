@@ -1,15 +1,24 @@
 # HTMLComposeText
 ## Current Compose Version: 1.1.1
-Compose HtmlText
-
-Text composable to show html text from resources
+Compose HtmlText is capable to render HTML string from resources or from anywhere in the android project.
 
 
 
-[comment]: <> (# Add to your project)
+# Add it into your project.
+Add it in your root build.gradle at the end of repositories:
+```groovy
 
-[comment]: <> (Add actual HtmlText library:)
-
+repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+```
+Add this line in your app/build.gradle file.
+```groovy
+dependencies {
+    implementation 'com.github.CHRehan:HTMLComposeText:1.0.0'
+}
+```
 
 
 # How does it work?
@@ -17,7 +26,7 @@ Text composable to show html text from resources
 Use it like a normal Text composable
 
 ```kotlin
-HtmlText(textId = R.string.hello_world)
+HtmlText(textId = stringResource(R.string.hello_world))
 ```
 
 ```xml
@@ -30,7 +39,6 @@ HtmlText(textId = R.string.hello_world)
 
 <img   src="/art/1.png" width="220"/>   <img   src="/art/2.png" width="220"/>   <img  src="/art/3.png" width="220"/>
 
-That's it!
 
 License
 --------
